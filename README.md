@@ -29,7 +29,7 @@ import { useAtom, atom } from 'jotai';
 const userAtom = atom(null);
 
 export const User = () => {
-  const [user] = useAtom(userAtom);
+  const [user, setUser] = useAtom(userAtom);
 
   return (
     <div>
